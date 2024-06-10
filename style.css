@@ -33,12 +33,83 @@ html{
 .enlaceHeader{
     color: #c2e76f;
     text-decoration: none;
-    width: 300px;
     display: flex;
     justify-content: center;
 }
+.buttonScroll {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(20, 20, 20);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 0px 4px #c2e76f;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  position: fixed;
+  top: 100px;
+  right: 50px;
+  z-index: 1000;
+}
+
+.svgIconScroll {
+  width: 12px;
+  transition-duration: 0.3s;
+}
+
+.svgIconScroll path {
+  fill: #c2e76f;
+}
+
+.buttonScroll:hover {
+  width: 140px;
+  border-radius: 50px;
+  transition-duration: 0.3s;
+  background-color: #1a1a1a;
+  align-items: center;
+}
+
+.buttonScroll:hover .svgIconScroll {
+  /* width: 20px; */
+  transition-duration: 0.3s;
+  transform: translateY(-200%);
+}
+
+.buttonScroll::before {
+  position: absolute;
+  bottom: -20px;
+  content: "Back to Top";
+  color: #c2e76f;
+  /* transition-duration: .3s; */
+  font-size: 0px;
+}
+
+.buttonScroll:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  bottom: unset;
+  /* transform: translateY(-30px); */
+  transition-duration: 0.3s;
+}
+
+.logoIndex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: montserrat;
+  color: #c2e76f;
+}
+.logoIndex h2{
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: 400;
+}
 .imgLogoIndex{
-    height: 55px;
+    height: 75px;
     margin: 10px;
 }
 .headerIndex{
@@ -194,6 +265,12 @@ nav{
 
 .imgCarrousel1{
     height: 600px;
+}
+#hiddenImg{
+  display: none;
+}
+#hiddenImg2{
+  display: none;
 }
 .section3index{
     display: flex;
@@ -800,15 +877,25 @@ ul{
     display: none;
   }
   .tituloSectionIndex h1{
-    font-size: 50px;
+    font-size: 60px;
     width: 100%;
     padding: 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+
   }
   .tituloSectionIndex h3{
+    font-size: 25px;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .tituloSectionIndex{
     width: 100%;
+    margin: 10px;
   }
   .imgCarrousel1{
     height: 200px;
@@ -822,6 +909,27 @@ ul{
   }
   .main{
     scale: 150%;
+  }
+  .showImg{
+    display: none;
+  }
+  #showImg{
+    display: none;
+  }
+  #hiddenImg{
+    display: block;
+  }
+  #showImg2{
+    display: none;
+  }
+  #hiddenImg2{
+    display: block;
+  }
+  .section5Index{
+    height: 750px;
+  }
+  .buttonScroll{
+    right: 10px;
   }
 }
 

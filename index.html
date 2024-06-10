@@ -15,14 +15,15 @@
 <body class="body">
     <header class="headerIndex">
         <div class="logoIndex">
-            <img src="./images/logoSinCódigo.png" alt="" class="imgLogoIndex">
+            <img src="./images/logo.png" alt="" class="imgLogoIndex">
+            <h2>Malbec Bytes</h2>
         </div>
         <div class="nav">
             <nav class="navIndex">
                 <ul class="ulIndex hiddenNav">
                     <li class="liIndexgreen liheader a"><a class="enlaceHeader" href="#section2">QUIENES SOMOS</a></li>
                     <li class="liIndexgreen liheader a"><a class="enlaceHeader" href="#section3">NUESTROS PROYECTOS</a></li>
-                    <li class="liIndexgreen liheader a"><a class="enlaceHeader" href="#section4">COTIZÁ</a></li>
+                    <li class="liIndexgreen liheader a"><a class="enlaceHeader" href="#section4">PLANES</a></li>
                     <li id="liVerde" class="liIndexgreen liheader alt"><a class="aVerde a" href="#section5">CONTACTANOS</a></li>
                 </ul>
                 <label class="popup">
@@ -64,6 +65,15 @@
         </div>
         <div class="imgSection">
             <img class="imgIndex" src="./images/imgSectionIndex.png" alt="">
+            <a href="./index.html">
+              <button class="buttonScroll">
+                <svg class="svgIconScroll" viewBox="0 0 384 512">
+                  <path
+                    d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+                  ></path>
+                </svg>
+              </button>
+            </a>
         </div>
     </section>
     <!-- segunda seccion -->
@@ -99,13 +109,15 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="10000">
-              <img class="imgCarrousel1" src="./images/imgCarrousel1.png" class="d-block w-100" alt="pagina web carniceria">
+              <img src="./images/imgCarrouselMobile.png" class="w-100" id="hiddenImg" alt="">
+              <img class="imgCarrousel1" src="./images/imgCarrousel1.png" id="showImg" class="w-100" alt="pagina web carniceria">
               <div class="carousel-caption d-none d-md-block">
                 <p><a class="linkCarrousel" target="_blank" href="https://carnesryb.website/">Link a la página</a></p>
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="2000">
-              <img class="imgCarrousel1" src="./images/imgCarrousel2.png" class="d-block w-100" alt="pagina web local de ropa">
+              <img class="w-100" id="hiddenImg2" src="./images/imgCarrouselMobile2.png" alt="">
+              <img class="imgCarrousel1" id="showImg2" src="./images/imgCarrousel2.png" class="d-block w-100" alt="pagina web local de ropa">
               <div class="carousel-caption d-none d-md-block">
                 <p>Host en proceso</p>
               </div>
@@ -128,7 +140,7 @@
         <a class="linkPlanes" href="https://wa.link/j40m0m">
           <div class="card2">
             <h3>Básico</h3>
-            <ul>
+            <ul class="ulPlannes">
               <li>
                 <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#09ce30"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
                 <span>Única Página informativa</span>
