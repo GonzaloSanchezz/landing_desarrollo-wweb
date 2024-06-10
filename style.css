@@ -883,8 +883,6 @@ ul{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-
-
   }
   .tituloSectionIndex h3{
     font-size: 25px;
@@ -930,6 +928,12 @@ ul{
   }
   .buttonScroll{
     right: 10px;
+  }
+  .imgLogoIndex{
+    height: 50px;
+  }
+  .logoIndex h2{
+    font-size: 10px;
   }
 }
 
