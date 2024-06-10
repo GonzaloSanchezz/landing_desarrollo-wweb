@@ -648,7 +648,7 @@ ul{
   --nav-button-padding-y: 0.375em;
   --nav-button-border-radius: 0.375em;
   --nav-button-font-size: 12px;
-  --nav-button-hover-bg: rgb(80, 3, 15);
+  --nav-button-hover-bg: rgba(0, 0, 0, 0.678);
   --nav-button-hover-text-color: #fff;
   --nav-button-distance: 0.875em;
   /* underline */
@@ -725,7 +725,7 @@ ul{
   right: var(--nav-position-right);
   transition: var(--burger-transition);
   margin-top: 20px;
-  height: 105px;
+  height: 125px;
 }
 
 .popup-window legend {
@@ -819,6 +819,7 @@ ul{
   .popup{
     display: block;
     padding: 20px;
+    z-index: 2000;
   }
   .hiddenNav{
     display: none;
@@ -857,15 +858,7 @@ ul{
   }
 }
 
-
-
-
-
 /* /////////////////////////////////////////// */
-
-
-
-
 
 @media(max-width: 770px){
   .imgCarrousel1{
@@ -933,7 +926,7 @@ ul{
     height: 50px;
   }
   .logoIndex h2{
-    font-size: 10px;
+    font-size: 15px;
   }
 }
 
