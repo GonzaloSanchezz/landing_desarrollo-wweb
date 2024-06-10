@@ -814,8 +814,17 @@ ul{
     height: 500px;
   }
 }
+@media(max-width: 1055px){
+  .planes{
+    display: flex;
+    flex-direction: column;
+  }
+  #section4{
+    height: 1550px;
+  }
+}
 
-@media (max-width: 970px) {
+@media (max-width: 1010px) {
   .popup{
     display: block;
     padding: 20px;
