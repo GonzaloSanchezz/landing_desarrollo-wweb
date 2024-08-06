@@ -194,11 +194,14 @@ nav{
     height: 600px;
     display: flex;
     justify-content: space-between;
-    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    width: 100%;
+    margin-right: 50px;
 }
 .section2Index{
     background-color: #131313f3;
-    height: 650px;
+    height: 1050px;
     font-family: montserrat;
     display: flex;
     justify-content: space-between;
@@ -211,11 +214,12 @@ nav{
     align-items: flex-start;
     justify-content: center;
     margin-left: 30px;
-    width: 600px;
+    width: 300px;
 }
 .titulo2Parrafo h2{
-    font-size: 60px;
+    font-size: 50px;
     margin-bottom: 40px;
+    width: 300px;
 }
 .titulo2Parrafo p{
     font-size: 28px;
@@ -223,25 +227,38 @@ nav{
 .tituloSectionIndex{
     margin-left: 50px;
     margin-right: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .tituloSectionIndex h1{
-    font-size: 90px;
-    font-weight: 400;
+    font-size: 50px;
+    font-weight: 300;
+    text-align: center;
+    width: 150px;
 }
 .tituloSectionIndex h3{
     margin-top: 30px;
     font-size: 45px;
     font-weight: 200;
+    text-align: center;
 }
 .imgIndex{
     height: 400px;
     margin-right: 100px;
 }
+.imgIndex2{
+  display: none;
+  height: 200px;
+  width: 200px;
+  margin-top: 20px;
+}
 
 /* loader */
 .loader {
     width: 350px;
-    height: 650px;
+    height: 1050px;
     background: linear-gradient(#0000 calc(1*100%/6),#c2e76f 0 calc(3*100%/6),#0000 0),
               linear-gradient(#0000 calc(2*100%/6),#c2e76f 0 calc(4*100%/6),#0000 0),
               linear-gradient(#0000 calc(3*100%/6),#c2e76f 0 calc(5*100%/6),#0000 0);
@@ -605,6 +622,28 @@ ul{
   color: #c2e76f;
   text-decoration: none;
 }
+.divFlechas{
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flecha{
+  height: 130px;
+}
+.destapador{
+  height: 150px;
+}
+.flujo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flujo svg{
+  margin-bottom: 13px;
+  scale: 150%;
+}
+
 /*////////////popup///////////////////////*/
 .popup {
   --burger-line-width: 1.125em;
@@ -853,7 +892,7 @@ ul{
     height: 300px;
   }
   .titulo2Parrafo h2{
-    font-size: 45px;
+    font-size: 35px;
   }
   .titulo2Parrafo p{
     font-size: 20px;
@@ -877,6 +916,9 @@ ul{
 @media(max-width: 580px){
   .imgIndex{
     display: none;
+  }
+  .imgIndex2{
+    display: block;
   }
   .tituloSectionIndex h1{
     font-size: 60px;
@@ -936,6 +978,10 @@ ul{
   }
   .logoIndex h2{
     font-size: 15px;
+  }
+  .tituloSectionIndex{
+    margin: 0px;
+    margin-top: 20px;
   }
 }
 
