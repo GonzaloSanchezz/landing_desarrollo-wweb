@@ -205,7 +205,7 @@ nav{
     font-family: montserrat;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 200px;
+    margin-bottom: 50px;
     color: #c2e76f;
 }
 .titulo2Parrafo{
@@ -427,11 +427,12 @@ nav{
 /* ////////////////////////// */
 
 .section4Index{
-  margin-top: 150px;
+  margin-top: 50px;
   height: 650px;
   background-color: #131313f3;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   font-family: montserrat;
 }
@@ -440,6 +441,7 @@ nav{
   margin-top: 60px;
   font-weight: 400;
   color: #c2e76f;
+  text-align: center;
 }
 .linkPlanes{
   text-decoration: none;
@@ -642,6 +644,20 @@ ul{
 .flujo svg{
   margin-bottom: 13px;
   scale: 150%;
+}
+.chart-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+canvas {
+  width: 100% !important;
+  height: 300px !important; /* Altura mínima deseada */
+}
+@media (max-width: 768px) {
+  canvas {
+      height: 300px !important; /* Altura mínima para dispositivos móviles */
+  }
 }
 
 /*////////////popup///////////////////////*/
@@ -905,8 +921,65 @@ ul{
     height: 400px;
   }
 }
-
+.sectionIntermedia1{
+  height: 700px;
+  background-color: #131313f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  color: #c2e76f;
+}
+.sectionIntermedia1 h3{
+  margin-top: 50px;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.sectionIntermedia1 p{
+  font-size: 20px;
+  width: 300px;
+  text-align: center;
+}
+.sectionIntermedia2{
+  height: 800px;
+  background-color: #c2e76f;
+}
 /* /////////////////////////////////////////// */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.benefits-section {
+    background-color: #131313f3;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin-top: 20px;
+}
+.benefits-section h2 {
+    text-align: center;
+    color: #c2e76f;
+    margin-bottom: 20px;
+}
+.benefit {
+    margin-bottom: 20px;
+}
+.benefit h3 {
+    color: #c2e76f;
+}
+.benefit p {
+    color: white;
+}
+.toggle-content {
+    display: none;
+}
+.show-more {
+    color: #c2e76f;
+    cursor: pointer;
+    text-decoration: underline;
+}
 
 @media(max-width: 770px){
   .imgCarrousel1{
@@ -982,6 +1055,23 @@ ul{
   .tituloSectionIndex{
     margin: 0px;
     margin-top: 20px;
+  }
+}
+@media(min-width: 550px){
+  .tituloSectionIndex h1{
+    width: 600px;
+    font-size: 60px;
+    margin-top: 0px;
+  }
+  .titulo2Parrafo{
+    margin-left: 200px;
+    scale:70%;
+  }
+  .section2Index{
+    height: 1200px;
+  }
+  .loader{
+    height: 1200px;
   }
 }
 
