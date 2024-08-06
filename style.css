@@ -219,7 +219,7 @@ nav{
 .titulo2Parrafo h2{
     font-size: 50px;
     margin-bottom: 40px;
-    width: 300px;
+    width: 235px;
 }
 .titulo2Parrafo p{
     font-size: 28px;
@@ -262,7 +262,7 @@ nav{
     background: linear-gradient(#0000 calc(1*100%/6),#c2e76f 0 calc(3*100%/6),#0000 0),
               linear-gradient(#0000 calc(2*100%/6),#c2e76f 0 calc(4*100%/6),#0000 0),
               linear-gradient(#0000 calc(3*100%/6),#c2e76f 0 calc(5*100%/6),#0000 0);
-    background-size: 60px 600%;
+    background-size: 20px 600%;
     background-repeat: no-repeat;
     animation: matrix 2s infinite linear;
     margin-right: 150px;
@@ -892,10 +892,10 @@ ul{
     height: 300px;
   }
   .titulo2Parrafo h2{
-    font-size: 35px;
+    font-size: 30px;
   }
   .titulo2Parrafo p{
-    font-size: 20px;
+    font-size: 18px;
   }
   .loader{
     margin-right: 20px;
