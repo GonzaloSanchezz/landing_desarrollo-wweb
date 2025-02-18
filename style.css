@@ -238,11 +238,17 @@ nav{
     text-align: center;
     width: 150px;
 }
-.tituloSectionIndex h3{
-    margin-top: 30px;
-    font-size: 45px;
-    font-weight: 200;
-    text-align: center;
+.tituloSectionIndex button{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(36, 36, 36);
+    color: #c2e76f;
+    font-size: 10px;
+}
+.tituloSectionIndex button a{
+  color: #a0c452;
+  text-decoration: none;
 }
 .imgIndex{
     height: 400px;
